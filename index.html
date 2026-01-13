@@ -641,7 +641,7 @@
 
     .service-item h3 {
       font-family: var(--serif);
-      font-size: clamp(56px, 6vw, 72px); 
+      font-size: clamp(56px, 6vw, 72px);
       font-weight: 400;
       text-transform: uppercase;
       display: flex;
@@ -1231,6 +1231,28 @@
         border-bottom: 1px solid var(--charcoal);
       }
 
+      /* Scattered Gallery - Stack on mobile */
+      .scattered-gallery {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .scattered-img {
+        position: relative;
+        width: 100% !important;
+        height: auto !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+      }
+
+      .scattered-img img {
+        width: 100%;
+        height: auto;
+      }
+
       /* Welcome stays 2-column on tablet/mobile */
       .welcome-grid {
         gap: 15px;
@@ -1385,10 +1407,13 @@
         font-size: 2.5rem !important;
       }
 
-      .service-item h3,
       .freebie-image h3,
       .blog-header h2 {
         font-size: 2rem !important;
+      }
+
+      .service-item h3 {
+        font-size: 3.3rem !important;
       }
 
       .blog-card h4,
